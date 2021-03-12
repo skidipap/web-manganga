@@ -1,0 +1,7 @@
+asgiref 
+certifi==2020.12.5
+Django 
+gunicorn==20.0.4
+psycopg2 
+pytz 
+sqlparse 
