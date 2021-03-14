@@ -16,7 +16,7 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Raleway:401,300,600" rel="stylesheet" type="text/css">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -33,44 +33,8 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    <section class="header">
-
-      <h2 class="title">Simple clean website for manga reader</h2>
-      <a class="button button-primary" href="#">Read Now</a>
-      <div class="value-props row">
-        <div class="four columns value-prop">
-          <img class="value-img" src="{% static "images/feather.svg" %}">
-          Light, clean, and simple with KISS (Keep It Simple Stupid) phylosophy behind it.
-        </div>
-        <div class="four columns value-prop">
-          <img class="value-img" src="{% static "images/pens.svg" %}">
-          With auto-translation, OCR, and text-localization for translation.
-        </div>
-        <div class="four columns value-prop">
-          <img class="value-img" src="{% static "images/watch.svg" %}">
-          No waiting and fast update because
-           using technology for translation.
-        </div>
-      </div>
-
-    </section>
-    <nav class="navbar">
-      <div class="container">
-        <ul class="navbar-list">
-          <li class="navbar-item"><a class="navbar-link" href="#">Home</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="/mangareader">Read Mangga</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="#">Mangga Update</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="#">Technology behind it</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Manganga Website</h4>
-        <p>Minimalism and clean website for reading manga. Powered by auto-translation using OCR and text-localization</p>
-	<p> ~ :: mad 💘 saffron and jen 🌻 :: ~ </p>
-      </div>
-    </div>
+		{% block content %}
+		{% endblock content %}
   </div>
 
 <!-- End Document
