@@ -1,9 +1,13 @@
 from django.test import TestCase
-from django.test import SimpleTestCase
+
+from .models import MangaList
 
 # Create your tests here.
-class SimpleTests(SimpleTestCase):
-    def test_mangareader_page_status_code(self):
-        response = self.client.get('/mangareader/')
-        self.assertEqual(response.status_code, 200)
+class MangaListModelTest(TestCase):
+    def setUp(self):
+        MangaList.objects.create(title='just a test')
 
+    def test_title_content(self):
+        name = MangaList.objects.get(id=1)
+        expected_object_name = f'{name.title}'
+        self.assertEqual(expected_object_name, 'just a test')
