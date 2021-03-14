@@ -6,3 +6,4 @@ psycopg2
 pytz 
 sqlparse 
 whitenoise
+dj-database-url
